@@ -12,6 +12,7 @@
 		F627800B1F93602F008B1D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62780091F93602F008B1D79 /* Main.storyboard */; };
 		F627800D1F93602F008B1D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F627800C1F93602F008B1D79 /* Assets.xcassets */; };
 		F62780101F93602F008B1D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F627800E1F93602F008B1D79 /* LaunchScreen.storyboard */; };
+		F62780191F9371A7008B1D79 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62780181F9371A7008B1D79 /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F627800C1F93602F008B1D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F627800F1F93602F008B1D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F62780111F93602F008B1D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F62780181F9371A7008B1D79 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F62780041F93602F008B1D79 /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				F62780171F9367FC008B1D79 /* Views */,
 				F62780051F93602F008B1D79 /* AppDelegate.swift */,
 				F62780071F93602F008B1D79 /* ViewController.swift */,
 				F62780091F93602F008B1D79 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				F62780111F93602F008B1D79 /* Info.plist */,
 			);
 			path = "app-swoosh";
+			sourceTree = "<group>";
+		};
+		F62780171F9367FC008B1D79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F62780181F9371A7008B1D79 /* BorderedButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			files = (
 				F62780081F93602F008B1D79 /* ViewController.swift in Sources */,
 				F62780061F93602F008B1D79 /* AppDelegate.swift in Sources */,
+				F62780191F9371A7008B1D79 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robovarga.app-swoosh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robovarga.app-swoosh";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
