@@ -14,6 +14,9 @@ class LeagueVC: UIViewController {
     
     
     @IBOutlet weak var nextBtn: BorderedButton!
+    @IBOutlet weak var mensBtn: BorderedButton!
+    @IBOutlet weak var womensBtn: BorderedButton!
+    @IBOutlet weak var coedBtn: BorderedButton!
     
     
     override func viewDidLoad() {
@@ -42,17 +45,21 @@ class LeagueVC: UIViewController {
     
     func selectLeague(leagueType: String) {
         player.dessiredLeague = leagueType
+        
+        mensBtn.isHighlighted = (leagueType == "mens" ? true : false)
+        womensBtn.isHighlighted = (leagueType == "womens" ? true : false)
+        coedBtn.isHighlighted = (leagueType == "coed" ? true : false)
+        
+        print(mensBtn.isHighlighted)
+        
+        
         nextBtn.isEnabled = true
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = player
+        }
     }
-    */
 
 }
